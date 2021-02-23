@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+
+function Text (props){
+  const a = props.decoration ? 'underline' : 'none';
+
+  return <p style = {{fontSize:props.size + 'px', color:props.color, textDecoration:a}}> {props.text} </p>
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Text text="Regular Text"></Text>
+      <Text text="Huge text" size={20}></Text>
+      <Text text="Danger notification" color="red"></Text>
+      <Text text="Underlined Text" decoration></Text>
     </div>
   );
 }
