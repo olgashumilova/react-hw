@@ -1,0 +1,29 @@
+.big-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: brown;
+}
+
+.medium-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-color: brown;
+}
+
+.small-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: brown;
+}
