@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles.css';
 
 class Ex6 extends React.Component {
 
