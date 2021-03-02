@@ -7,7 +7,7 @@ import arrow3 from './arrow3.png'
 class Ex3 extends React.Component {
     
     state = {
-        value: <img src={arrow1}></img>
+        value: arrow1
     }
     
     change = () => { 
@@ -23,7 +23,9 @@ class Ex3 extends React.Component {
     }
 
     render () {
-        return <div onClick = {this.change}>{this.state.value}</div>
+        return <div onClick = {this.change}>
+            <img src = {this.state.value} alt = 'img'/>
+        </div>
     }
 }
 
