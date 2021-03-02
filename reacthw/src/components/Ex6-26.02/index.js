@@ -6,6 +6,8 @@ class Ex6 extends React.Component {
         visible: true
     }
 
+    ingredients = ['Соус', 'Салат', 'Огурец', 'Помидор']
+
     change = () => {
 
         if (this.state.visible === true) {
@@ -18,7 +20,12 @@ class Ex6 extends React.Component {
 
     render () {
         return (
-            this.state.visible === true ? (<button onClick = {this.change}>Ингридиенты</button>) : (<li onClick = {this.change}>Пепперони</li>)
+            this.state.visible === true ? 
+                (<button onClick = {this.change}>Ингридиенты</button>)
+            : 
+                (<ul onClick = {this.change}>
+                    {this.ingredients.map((item) => <li> {item} </li>)} 
+                </ul>)
         )
     }
 }
