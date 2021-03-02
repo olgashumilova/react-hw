@@ -6,15 +6,17 @@ class Ex1 extends React.Component {
         isSignedIn: false
     }
     
-    change = setTimeout(() => {
+    change = () => 
 
-        if (this.state.isSignedIn === false) {
-            this.setState ({isSignedIn: true})
-        } else {
-            this.setState ({isSignedIn: false})
-        }
-
-    }, 3000)
+        {setTimeout(() => {
+            if (this.state.isSignedIn === false) {
+                this.setState ({isSignedIn: true})
+            } else {
+                this.setState ({isSignedIn: false})
+            }
+        }, 3000)
+        
+    }
 
     render () {
         return (
