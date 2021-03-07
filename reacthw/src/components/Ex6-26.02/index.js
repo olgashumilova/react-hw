@@ -20,13 +20,14 @@ class Ex6 extends React.Component {
 
     render () {
         return (
-            this.state.visible === true ? 
-                (<button onClick = {this.change}>Ингридиенты</button>)
-            : 
+            (<button onClick = {this.change}>Ингридиенты</button>)
+            
+            (this.state.visible === true ? 
                 (<ul onClick = {this.change}>
                     {this.ingredients.map((item) => <li> {item} </li>)} 
                 </ul>)
-        )
+            : null
+        ))
     }
 }
 
